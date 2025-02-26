@@ -2,6 +2,38 @@
 
 body{
     font-family: "Poppins", serif;
-    --green: #06f9b7
-    --grey-bg: #f8fafa
+    --green: #06f9b7;
+    --grey-bg: #f8fafa;
+}
+
+.green{
+    color: var(--green);
+}
+
+h2{
+    font-size: 40px
+}
+
+.aboutus{
+    margin: auto;
+    width: 1000px;
+}
+
+.aboutus .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.aboutus .grid i{
+    font-size: 4rem;
+}
+
+.aboutus .grid div{
+    width: 200px;
+}
+
+.aboutus p{
+    font-size: small;
 }
