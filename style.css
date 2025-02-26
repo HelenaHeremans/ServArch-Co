@@ -4,10 +4,10 @@ body{
     font-family: "Poppins", serif;
     --green: #06f9b7;
     --grey-bg: #f8fafa;
+    --grey-text:#474747;
     margin: 0;
-    background-color: black;
-    font-family: 'Poppins', Arial, sans-serif;
 }
+//gwen
 
 .pagina {
     display: grid;
@@ -72,4 +72,75 @@ body{
 }.fa {
   width: 60px;
   color:black;
+}
+
+//gwen
+    
+
+
+
+.portfolio{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-top {
+    width: 100%;
+}
+
+.port-heading h2 {
+    font-weight: 800;
+    font-size: 4rem ;
+    margin-bottom: 0;
+}
+.port-heading span {
+    color: var(--green);
+
+}
+.portfolio-top p{
+    margin-top: 1rem;
+    color: var(--grey-text);
+}
+
+.portfolio-links {
+    margin-top: 3rem;
+}
+
+.portfolio-links a {
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 2rem;
+    color: black;
+}
+
+.portfolio-links a:first-child{
+    color: var(--green);
+}
+
+.gallery-section {
+    width: fit-content;
+    margin: 0 auto;
+}
+.gallery-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+}
+
+.gallery-container img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 0;
+    object-fit: cover;
 }
