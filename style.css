@@ -12,16 +12,14 @@ body{
 .pagina {
     display: grid;
     grid-template-columns: 1fr;
-    width: 900px;
+    width: 1200px;
     gap: 1.5rem;
     padding: 2rem;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 2rem auto;
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-
-
 }
 
 .header_color {
@@ -34,12 +32,33 @@ body{
 
 }
 .headNav {
+    display: grid;
+    grid-template-columns: 6fr 8fr;
+    align-items: center
 
 }
 .headNavLogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.rechts {
+    justify-self: end;
+    
 
 }
+
+.helali {
+    font-size: 20px;
+    font-style: italic;
+    
+
+}
+
 .HeadNavNavigatie {
+    display: grid;
+    grid-template-columns: repeat(6,1fr)
+
 
 }
 .headMidden {
