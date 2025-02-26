@@ -2,6 +2,55 @@
 
 body{
     font-family: "Poppins", serif;
-    --green: #06f9b7
-    --grey-bg: #f8fafa
+    --green: #06f9b7;
+    --grey-bg: #f8fafa;
+    margin: 0;
+    background-color: black;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.pagina {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 900px;
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+
+}
+
+.header_color {
+
+}
+.headZwart {
+
+}
+.headGroen {
+
+}
+.headNav {
+
+}
+.headNavLogo {
+
+}
+.HeadNavNavigatie {
+
+}
+.headMidden {
+
+}
+.headButton {
+
+}
+.headBeneden {
+
+}.fa {
+  width: 60px;
+  color:black;
 }
