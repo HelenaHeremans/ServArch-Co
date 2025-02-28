@@ -76,15 +76,15 @@ body{
 }
 
 .testimonials-section {
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
     height: 100vh;
 }
 
 .testim-left-container {
-    flex: 1;
+    flex: 3;    
     position: relative;
     background: url(/images/7.jpg) center/cover no-repeat;
     height: 80%;
@@ -92,6 +92,7 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
+    margin-left: 0;
     color: black;
 }
 
@@ -106,6 +107,15 @@ body{
     z-index: 1;
 }
 
+.testim-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 12rem;
+    margin-right: 2rem;
+    width: 60%;
+}
+
 .testim-left-container p,
 .testim-left-container i {
     position: relative;
@@ -116,13 +126,15 @@ body{
     font-size: 5rem;
     margin-bottom: 1rem;
 }
+
 .testim-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
+
 }
 
 .testim-author {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -131,34 +143,64 @@ body{
 }
 
 .testim-right-container {
-    flex: 1;
+    flex: 2;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     text-align: center;
+    position: relative;
 }
+
+.testim-title {
+    display: inline-block;
+    align-self: start;
+    position: relative;
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+}
+
 .testim-right-container h2 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
+    text-decoration-line: calc(15px);
 }
 
 .green-testim-line {
-    width: 50px;
-    height: 5px;
-    background: var(--green);
-    margin-bottom: 1rem;
+        position: absolute; 
+        left: -40px;
+        top: 75%;
+        width: 120px;
+        height: 5px;
+        background: var(--green);
+        transform: translateY(-25%);
+        z-index: -1;
 }
 
 .green-testim-box {
-    background: var(--green);
-    padding: 5rem 3rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+        background: var(--green);
+        padding: 5rem 3rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+}
+
+.testim-button-collection {
+    display: inline-block;
+    align-self: start;
+    position: relative;
+    margin-bottom: 5rem;
+    margin-left: 2rem;
 }
 
 .testim-button {
+    display: inline-block;
     color: black;
+    margin-right: 2.5rem;
     text-decoration: none;
     border: 1px solid black;
     border-radius: 4px;
@@ -169,4 +211,27 @@ body{
     color: white;
     font-size: 10px;
     margin-right: 10px;
+}
+
+.white-testim-line {
+    position: absolute; 
+    right: 20px;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    transform: translateY(-40%);
+    z-index: 3;
+}
+
+.testim-icons i{
+    font-size: 10px;
+    margin-right: 10px;
+} 
+
+.testim-vertical-text {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 0;
+    margin-top: 4rem;
 }
