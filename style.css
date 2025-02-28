@@ -54,10 +54,15 @@ h2{
 }
 //gwen
 
-.pagina {
+
+.pagina {   
+    position: relative;
+    top:0px;
+    z-index: 1;
+    width: 1200px;
+    min-width: 1200px;
     display: grid;
     grid-template-columns: 1fr;
-    width: 1200px;
     gap: 1.5rem;
     padding: 2rem;
     max-width: 1200px;
@@ -65,23 +70,59 @@ h2{
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    overflow-x: auto;
+    overflow-x: visible;
 }
 
 .header_color {
-
+    position: absolute;
+    min-width: 1300px;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
 }
-.headZwart {
 
+.header_color img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+.headZwart, .headGroen {
+    position: absolute;
+    top: 0;
+    height: 100%; 
+    width: 60%; 
+    background: rgba(0, 0, 0, 0.6); 
+}
+
+.headZwart {
+    left: 0;
+}
+
+.headGroen {
+    left: 60%;
+    width: 45%;
+    background: #00ff0099; 
 }
 .headGroen {
-
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 55%;
+    background: rgba(0, 0, 0, 0.9);
+    left: 60%;  
+    width: 45%; 
+    background: #06f9b8b8
 }
+
 .headNav {
     display: grid;
     grid-template-columns: 6fr 8fr;
-    align-items: center
-
+    align-items: center;
+    padding: 25px;
 }
+
 .headNavLogo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -89,36 +130,78 @@ h2{
 }
 .rechts {
     justify-self: end;
-    
-
 }
 
 .helali {
     font-size: 20px;
     font-style: italic;
-    
-
 }
 
 .HeadNavNavigatie {
     display: grid;
     grid-template-columns: repeat(6,1fr)
-
-
 }
+
+.headwit {
+    color: white;
+}
+
 .headMidden {
-
+    margin-top: 50px;
+    padding-top: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
 }
+.weare {
+    justify-self: end;
+    margin-right: 20px;      
+}
+.creative {
+    margin-left: 50px;
+}
+
 .headButton {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
 
 }
-.headBeneden {
+.headButtonLeft {
+    justify-self: end;
+}
 
-}.fa {
+.headButtonbut {
+    font-size: 30px;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    padding: 10px 50px;
+}   
+
+.headBeneden {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.headux {
+    font-size: 140px;
+    font-weight: 900;
+    color: black;
+}
+
+.headpuntje{
+    color:white;
+}
+    
+.fa {
   width: 60px;
   color:black;
 }
-
+//gwen
+    
 .ourServicesbg{
     background-color: var(--grey-bg);
     padding: 80px;
@@ -190,8 +273,6 @@ h2{
 .ourServices p{
     font-size: small;
 }
-
-
 
 .portfolio{
     width: 1200px;
