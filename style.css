@@ -9,11 +9,15 @@ body{
 }
 //gwen
 
-.pagina {
-    display: grid;
-    grid-template-columns: 1fr;
+
+.pagina {   
+    position: relative;
+    top:0px;
+    z-index: 1;
     width: 1200px;
     min-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 2rem;
     max-width: 1200px;
@@ -22,12 +26,15 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow-x: auto;
+    overflow-x: visible;
 }
 
 .header_color {
-    position: relative;
+    position: absolute;
+    min-width: 1300px;
     width: 100%;
     overflow: hidden;
+    z-index: -1;
 }
 
 .header_color img {
@@ -62,14 +69,15 @@ body{
     left: 60%;  
     width: 45%; 
     background: #06f9b8b8
-
 }
+
 .headNav {
     display: grid;
     grid-template-columns: 6fr 8fr;
-    align-items: center
-
+    align-items: center;
+    padding: 25px;
 }
+
 .headNavLogo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -77,8 +85,6 @@ body{
 }
 .rechts {
     justify-self: end;
-    
-
 }
 
 .helali {
@@ -91,24 +97,67 @@ body{
     grid-template-columns: repeat(6,1fr)
 }
 
+.headwit {
+    color: white;
+}
+
 .headMidden {
-
+    margin-top: 50px;
+    padding-top: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
 }
+.weare {
+    justify-self: end;
+    margin-right: 20px;      
+}
+.creative {
+    margin-left: 50px;
+}
+
 .headButton {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
 
 }
-.headBeneden {
+.headButtonLeft {
+    justify-self: end;
+}
 
-}.fa {
+.headButtonbut {
+    font-size: 30px;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    padding: 10px 50px;
+}   
+
+.headBeneden {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.headux {
+    font-size: 140px;
+    font-weight: 900;
+    color: black;
+}
+
+.headpuntje{
+    color:white;
+}
+    
+.fa {
   width: 60px;
   color:black;
 }
 
 //gwen
     
-
-
-
 .portfolio{
     width: 1200px;
     margin: 0 auto;
