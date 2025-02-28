@@ -84,16 +84,13 @@ body{
 .helali {
     font-size: 20px;
     font-style: italic;
-    
-
 }
 
 .HeadNavNavigatie {
     display: grid;
     grid-template-columns: repeat(6,1fr)
-
-
 }
+
 .headMidden {
 
 }
