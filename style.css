@@ -5,82 +5,11 @@ body{
     --green: #06f9b7;
     --grey-bg: #f8fafa;
     --grey-text:#474747;
-    margin: 0;
-}
-//gwen
-
-.pagina {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 1200px;
-    gap: 1.5rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.header_color {
 
 }
-.headZwart {
-
-}
-.headGroen {
-
-}
-.headNav {
-    display: grid;
-    grid-template-columns: 6fr 8fr;
-    align-items: center
-
-}
-.headNavLogo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-.rechts {
-    justify-self: end;
-    
-
-}
-
-.helali {
-    font-size: 20px;
-    font-style: italic;
-    
-
-}
-
-.HeadNavNavigatie {
-    display: grid;
-    grid-template-columns: repeat(6,1fr)
-
-
-}
-.headMidden {
-
-}
-.headButton {
-
-}
-.headBeneden {
-
-}.fa {
-  width: 60px;
-  color:black;
-}
-
-//gwen
-    
-
-
 
 .portfolio{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 3rem;
     background-color: #fff;
@@ -127,6 +56,7 @@ body{
     width: fit-content;
     margin: 0 auto;
 }
+
 .gallery-container {
     margin-top: 3rem;
     display: grid;
@@ -143,4 +73,100 @@ body{
     height: 450px;
     margin-bottom: 0;
     object-fit: cover;
+}
+
+.testimonials-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    height: 100vh;
+}
+
+.testim-left-container {
+    flex: 1;
+    position: relative;
+    background: url(/images/7.jpg) center/cover no-repeat;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    color: black;
+}
+
+.testim-left-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06f9b8e3;
+    z-index: 1;
+}
+
+.testim-left-container p,
+.testim-left-container i {
+    position: relative;
+    z-index: 2;
+}
+
+.quote-icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.testim-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.testim-author {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.testim-author span {
+    color: #fff;
+}
+
+.testim-right-container {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.testim-right-container h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.green-testim-line {
+    width: 50px;
+    height: 5px;
+    background: var(--green);
+    margin-bottom: 1rem;
+}
+
+.green-testim-box {
+    background: var(--green);
+    padding: 5rem 3rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.testim-button {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 15px 30px;
+}
+
+.testim-button i{
+    color: white;
+    font-size: 10px;
+    margin-right: 10px;
 }
