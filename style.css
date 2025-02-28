@@ -13,6 +13,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     width: 1200px;
+    min-width: 1200px;
     gap: 1.5rem;
     padding: 2rem;
     max-width: 1200px;
@@ -20,15 +21,47 @@ body{
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    overflow-x: auto;
 }
 
 .header_color {
-
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
-.headZwart {
 
+.header_color img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+.headZwart, .headGroen {
+    position: absolute;
+    top: 0;
+    height: 100%; 
+    width: 60%; 
+    background: rgba(0, 0, 0, 0.6); 
+}
+
+.headZwart {
+    left: 0;
+}
+
+.headGroen {
+    left: 60%;
+    width: 45%;
+    background: #00ff0099; 
 }
 .headGroen {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 55%;
+    background: rgba(0, 0, 0, 0.9);
+    left: 60%;  
+    width: 45%; 
+    background: #06f9b8b8
 
 }
 .headNav {
